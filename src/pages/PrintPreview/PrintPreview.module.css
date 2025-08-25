@@ -1,0 +1,148 @@
+.invoice {
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: var(--white);
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.buyerInfo {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.buyerInfo > div:first-child {
+  width: 75%;
+}
+
+.buyerInfo > div:last-child {
+  width: 25%;
+}
+
+.buyer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.invoiceTable,
+.summaryTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.invoiceTable th,
+.invoiceTable td,
+.summaryTable th,
+.summaryTable td {
+  border: 1px solid black;
+  padding: 6px;
+  text-align: center;
+}
+
+.total {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ✅ This vertically centers both items */
+  margin-top: 20px;
+}
+
+.bankDetails {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ✅ Ensures vertical centering of content */
+}
+
+.summaryTable {
+  width: 45%;
+}
+
+.netAmount {
+  text-align: right !important;
+}
+
+.summaryTable td:last-child,
+.summaryTable th:last-child {
+  text-align: right;
+}
+
+.summaryTable td:last-child,
+.summaryTable th:last-child {
+  min-width: 170px; /* adjust to match Net Amount column width */
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+  padding-top: 2.5rem;
+  gap: 10px;
+  border-top: 1px solid black;
+}
+
+.amountWords {
+  width: 70%;
+  word-break: break-word;
+}
+
+.signature {
+  width: 30%;
+  text-align: right;
+  font-weight: bold;
+}
+
+.download{
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  gap: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .infoRow,
+  .buyerInfo,
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .summaryTable {
+    width: 100%;
+  }
+
+  .invoiceTable th,
+  .invoiceTable td {
+    font-size: 10px;
+    padding: 4px;
+  }
+}

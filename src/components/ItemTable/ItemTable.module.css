@@ -1,0 +1,48 @@
+.tableWrapper {
+  overflow-x: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 600px;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table th:nth-child(1),
+.table td:nth-child(1),
+.table th:nth-child(2),
+.table td:nth-child(2),
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  text-align: center; /* HSN Code */
+}
+
+/* Align numeric columns (Rate, Quantity, Net Amount) to right */
+.table th:nth-child(4),
+.table td:nth-child(4),
+.table th:nth-child(5),
+.table td:nth-child(5),
+.table th:nth-child(6),
+.table td:nth-child(6) {
+  text-align: right;
+}
+
+.table th {
+  background-color: #f8f8f8;
+  font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+  background-color: #fafafa;
+}

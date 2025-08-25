@@ -1,0 +1,44 @@
+.invoiceForm {
+  width: 100%;
+}
+
+.invoiceItems {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.invoiceItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 38rem;
+  gap: 1rem;
+}
+
+.removeButton {
+  background-color: var(--danger-color);
+  padding: 0.35rem 0.75rem;
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+  margin-top: 1.6rem;
+}
+
+.removeButtonHidden {
+  visibility: hidden;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .invoiceHeader {
+    display: flex;
+    gap: 0.5rem;
+  }
+}

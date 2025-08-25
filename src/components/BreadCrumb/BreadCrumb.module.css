@@ -1,0 +1,32 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.backArrow {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.pathContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pathContainer div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pathContainer a {
+  color: black;
+}
+
+.separator {
+  color: var(--gray-contrast);
+  font-size: 1rem;
+  font-weight: bold;
+}

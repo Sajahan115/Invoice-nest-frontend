@@ -1,0 +1,54 @@
+.custButton {
+  outline: none;
+  border: none;
+  padding: 0.35rem .85rem;
+  border-radius: 0.35rem;
+  width: max-content;
+  max-width: 8rem;
+  color: black;
+  /* text-transform: uppercase; */
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.custButton:hover {
+  transform: scale(0.95);
+  transition: all 0.2s ease-in-out;
+}
+
+.primaryButton {
+  background-color: var(--primary-color) !important;
+  color: var(--white);
+}
+
+.primaryButton:hover {
+  background-color: var(--primary-color-contrast) !important;
+}
+
+.secondaryButton {
+  background-color: var(--gray) !important;
+  color: var(--white);
+}
+
+.secondaryButton:hover {
+  background-color: var(--gray-contrast) !important;
+}
+
+.dangerButton {
+  background-color: var(--danger-color) !important;
+  color: var(--white);
+}
+
+.dangerButton:hover {
+  background-color: var(--danger-color-contrast) !important;
+}
+
+.successButton {
+  background-color: var(--success-color) !important;
+  color: var(--white);
+}
+
+.successButton:hover {
+  background-color: var(--success-color-contrast) !important;
+}

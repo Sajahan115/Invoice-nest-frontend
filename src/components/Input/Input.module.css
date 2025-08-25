@@ -1,0 +1,40 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.inputContainer label {
+  font-weight: bold;
+}
+
+.fullWidth {
+  grid-column: 1 / -1; /* Span across both columns */
+}
+.custSelect {
+  width: 100%;
+}
+.inputContainer input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.error {
+  color: var(--danger-color);
+  font-size: 0.75rem !important;
+}
+
+.disabledDiv {
+  flex-direction: row;
+  align-items: center;
+}
+.disabledLabel {
+  width: 10rem;
+}

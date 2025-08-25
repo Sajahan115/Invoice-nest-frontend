@@ -1,0 +1,63 @@
+.accordionItem {
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.accordionHeader {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  color: var(--white);
+}
+
+.accordionHeader:hover {
+  background-color: var(--primary-color-contrast);
+}
+
+.accordionHeader .title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 1rem; /* Add horizontal padding for collapse */
+  background-color: var(--white);
+  border-left: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+  border-right: 1px solid var(--gray);
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+.accordionContentInner {
+  padding: 0;
+  transition: padding 0.3s ease;
+}
+
+.accordionItem.open .accordionContent {
+  max-height: 500px; /* Enough height for your content */
+}
+
+.accordionItem.open .accordionContentInner {
+  padding: 1rem 0; /* Add vertical padding only when open */
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+}

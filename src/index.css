@@ -1,0 +1,74 @@
+:root {
+  font-family: "Nunito Sans", sans-serif;
+  /* background-color: rgb(245, 245, 245); */
+  box-sizing: border-box;
+  font-size: 16px;
+
+  --primary-color: #1976d2;
+  --primary-color-contrast: #0a427a;
+  --primary-color-contrast-2: rgb(130, 216, 183);
+  --secondary-color: #641717;
+  --white: #fff;
+  --input-border: #05a3be;
+  --button-text: #fff;
+  --gray: #b8bbb9;
+  --gray-contrast: #949694;
+  --danger-color: #f01010;
+  --danger-color-contrast: #be0909;
+  --success-color: #08b630;
+  --success-color-contrast: #046b1c;
+  --subHeader-bg-color: #cfe4eb;
+  --background: #f5f5f5;
+  --text-color: #000;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --primary-color: #90caf9;
+  --primary-color-contrast: #42a5f5;
+  --primary-color-contrast-2: #1e88e5;
+  --secondary-color: #ffcccb;
+  --white: #1e1e1e;
+  --input-border: #64b5f6;
+  --button-text: #fff;
+  --gray: #757575;
+  --gray-contrast: #bdbdbd;
+  --danger-color: #ef5350;
+  --danger-color-contrast: #c62828;
+  --success-color: #66bb6a;
+  --success-color-contrast: #2e7d32;
+  --subHeader-bg-color: #cfe4eb;
+  --background: #121212;
+  --text-color: #fff;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+.custom-toast-success {
+  background-color: #28a745 !important;
+  color: white !important;
+}
+
+.custom-toast-error {
+  background-color: #dc3545 !important;
+  color: white !important;
+}
+
+.custom-toast-success .Toastify__toast-icon svg,
+.custom-toast-success .Toastify__close-button svg {
+  fill: white !important;
+}
+
+.custom-toast-error .Toastify__toast-icon svg,
+.custom-toast-error .Toastify__close-button svg {
+  fill: white !important;
+}
